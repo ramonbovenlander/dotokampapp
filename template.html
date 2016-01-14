@@ -1,0 +1,11 @@
+<div class="social-feed-element {{? !it.moderation_passed}}hidden{{?}}" dt-create="{{=it.dt_create}}" social-feed-id = "{{=it.id}}">
+    <div class='social-content'>
+        
+        <i class="ion-social-{{=it.social_network}}"></i> {{=it.time_ago}}
+        
+        <div class="social-media-body">
+            <p class="social-feed-text">{{=it.text}}</p>
+        </div>
+    </div>
+    {{=it.attachment}}
+</div>

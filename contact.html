@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/framework.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/jquery.socialfeed.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+  <link rel="apple-touch-icon" href="images/logo.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="css/ionicons.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+  <section class="w-section mobile-wrapper">
+    <div class="page-content" id="main-stack">
+    
+      <div class="w-nav navbar" data-collapse="all" data-animation="over-left" data-duration="400" data-contain="1" data-easing="ease-out-quint" data-no-scroll="1">
+        <div class="w-container">
+        
+        <!-- Menu -->
+          <nav class="w-nav-menu nav-menu bg-nogradient" role="navigation">
+            <div class="nav-menu-header">
+              <div class="logo"><img src="images/logo.png" width="90%"></div>
+            </div>
+          </nav>
+        <!-- end Menu -->
+        
+          <div class="wrapper-mask" data-ix="menu-mask"></div>
+          <div class="navbar-title">Nieuws</div>
+          
+          <div class="w-nav-button navbar-button left" id="menu-button" data-ix="hide-navbar-icons">
+          
+            <div class="navbar-button-icon home-icon">
+              <div class="ion-navicon-round"></div>
+            </div>
+          
+          </div>       
+        
+        </div>        
+      </div>
+      <div class="body">
+        <div class="home-content">
+        
+        <div class="text-new no-borders"> 
+        <div class="w-form">
+          <form id="gastenboek-form" name="gastenboek-form" action="http://www.dotokamp.nl/jsons/gastenboekinser.php" method="post">
+            <div class="separator-button-input"></div>
+            <div>
+              <label class="label-form" for="full-van-field">Van</label>
+              <input class="w-input input-form" id="van" type="text" name="voor" data-name="voor" required>
+              <div class="separator-fields"></div>
+            </div>
+            <div>
+              <label class="label-form" for="full-voor-field">Van</label>
+              <input class="w-input input-form" id="van" type="text" name="van" data-name="van" required>
+              <div class="separator-fields"></div>
+            </div>
+            <div>
+              <label class="label-form" for="message">Bericht</label>
+              <textarea class="w-input input-form textarea" id="bericht" name="bericht" data-name="bericht"></textarea>
+            </div>
+            <div class="separator-button-input"></div>
+            <input class="w-button action-button" type="submit" value="Verstuur" data-wait="Bericht wordt geplaatst,,,">
+          </form>
+          <div class="w-form-done">
+            <p>Je bericht is geplaatst</p>
+          </div>
+          <div class="w-form-fail">
+            <p>Er is iets niet helemaal goed gegaan, probeer het nog een keer.</p>
+          </div>
+        </div>
+          <div class="separator-fields"></div>
+        </div>
+      </div>
+    </div>
+    <div class="page-content loading-mask" id="new-stack">
+      <div class="loading-icon">
+        <div class="navbar-button-icon icon ion-load-d"></div>
+      </div>
+    </div>
+  </section>
+  <script src="js/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ["Montserrat:400,700"]
+      }
+    });
+  </script>
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/framework.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <script type="text/javascript" src="js/menuitem.js"></script>
+  <!--[if lte IE 9]><script src="js/placeholders.min.js"></script><![endif]-->
+    <script type="text/javascript">
+       addMenu();
+    </script>
+</body>
+</html>
